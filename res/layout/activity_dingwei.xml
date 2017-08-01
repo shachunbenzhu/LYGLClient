@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".DingweiActivity"
+    tools:ignore="MergeRootFrame" >
+    
+
+    <RelativeLayout 
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true">
+        <Button 
+            android:id="@+id/bt_dingwei_back"
+            android:layout_width="23dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_icon_back_white"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"/>
+        
+        <com.cn.ncist.rq.module.TitleTextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/dw"
+            android:textSize="25sp"
+            android:textColor="@drawable/white"
+            android:padding="3dp"/>
+    </RelativeLayout>
+    
+    <!-- 顶部搜索 -->
+    <RelativeLayout 
+        android:id="@+id/MyLayout_top"
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" 
+        android:layout_below="@id/rl"
+        android:gravity="center">
+    <LinearLayout  
+        android:orientation="horizontal"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"    
+        android:background="@null"  
+        android:padding="0dip" >  
+        <EditText android:id="@+id/city_edittext"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="#ffffff" 
+            android:textSize="22sp" 
+            android:hint="@string/srcs"
+            android:layout_weight="15" />
+        <EditText android:id="@+id/keyword_edittext"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="#ffffff" 
+            android:textSize="22sp" 
+            android:hint="@string/srgjc"
+            android:layout_weight="25" />  
+        <Button android:id="@+id/query_button"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center_vertical"   
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="@string/ss" />  
+    </LinearLayout> 
+    </RelativeLayout>
+    
+    <!-- 底部添加按钮 -->  
+    <RelativeLayout  
+        android:id="@+id/MyLayout_bottom"  
+        android:orientation="horizontal"   
+        android:layout_width="fill_parent"  
+        android:layout_height="50dp"  
+        android:layout_alignParentBottom="true"  
+        android:gravity="center">  
+        <LinearLayout   
+            android:layout_width="match_parent"  
+            android:layout_height="match_parent"  
+            android:orientation="horizontal"  
+            android:layout_alignParentBottom="true" >  
+            <Button  
+                 android:id="@+id/button1"  
+                 android:layout_width="wrap_content"  
+                 android:layout_height="match_parent"  
+                 android:layout_weight="1"  
+                 android:textColor="#ffffff"
+                 android:text="@string/dw" />  
+        </LinearLayout>  
+    </RelativeLayout>  
+    <!-- 显示图片 -->
+    <RelativeLayout
+        android:id="@+id/Content_Layout" 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:layout_above="@id/MyLayout_bottom" 
+        android:layout_below="@id/MyLayout_top"
+        android:gravity="center">
+        <com.baidu.mapapi.map.MapView  
+		    android:id="@+id/map_view"
+		    android:layout_width="fill_parent"  
+		    android:layout_height="fill_parent"  
+		    android:clickable="true" />
+    </RelativeLayout>
+</RelativeLayout>

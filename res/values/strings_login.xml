@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appname"></string>
+    <string name="username">用户名</string>
+    <string name="username_hint">请输入用户名</string>
+    <string name="password">密        码</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="showpassword">显示密码</string>
+    <string name="rempwd">记住密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="reset">重置</string>
+    <string name="main">进入主界面</string>
+    
+    <string name="touxiang">头像:</string>
+    <string name="touxiang_prompt">请选择你喜欢的头像风格</string>
+</resources>

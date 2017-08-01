@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/white">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/fxd"
+        android:textColor="@drawable/gray1"/>
+    <RadioGroup 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:id="@+id/rg_share_rg1"
+		android:gravity="center"
+		android:padding="5dp">
+			    
+		<RadioButton 
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/rb_share_wb"
+			android:gravity="center"
+			android:button="@null"
+			android:checked="true"
+			android:layout_weight="1"
+			android:drawableTop="@drawable/share_xlwb"
+			android:text="@string/wb"
+			android:textSize="13sp"
+			android:textColor="@drawable/gray1"/>
+		
+		<RadioButton 
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/rb_share_txwb"
+			android:gravity="center"
+			android:button="@null"
+			android:layout_weight="1"
+			android:drawableTop="@drawable/share_txwb"
+			android:text="@string/txwb"
+			android:textColor="@drawable/gray1"
+			android:textSize="13sp"/>
+		
+		<RadioButton 
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/rb_share_wx"
+			android:gravity="center"
+			android:button="@null"
+			android:layout_weight="1"
+			android:drawableTop="@drawable/share_wx"
+			android:text="@string/wx"
+			android:textColor="@drawable/gray1"
+			android:textSize="13sp"/>
+		
+		<RadioButton 
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/rb_share_pyq"
+			android:gravity="center"
+			android:button="@null"
+			android:layout_weight="1"
+			android:drawableTop="@drawable/share_pyq"
+			android:text="@string/pyq"
+			android:textColor="@drawable/gray1"
+			android:textSize="13sp"/>
+		
+	</RadioGroup>
+	<RadioGroup 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:id="@+id/rg_dialog_rg2"
+		android:gravity="center"
+		android:padding="5dp">
+			    
+		<RadioButton 
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:id="@+id/rb_share_qq"
+			android:gravity="center"
+			android:button="@null"
+			android:checked="true"
+			android:layout_weight="1"
+			android:drawableTop="@drawable/share_qq"
+			android:text="@string/qqhy"
+			android:textColor="@drawable/gray1"
+			android:textSize="13sp"/>
+		
+		<RadioButton 
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:id="@+id/rb_share_kj"
+			android:gravity="center"
+			android:button="@null"
+			android:layout_weight="1"
+			android:drawableTop="@drawable/share_kj"
+			android:text="@string/kj"
+			android:textColor="@drawable/gray1"
+			android:textSize="13sp"/>
+		
+		<RadioButton 
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:id="@+id/rb_share_copy"
+			android:gravity="center"
+			android:button="@null"
+			android:layout_weight="1"
+			android:drawableTop="@drawable/share_copy"
+			android:text="@string/copy"
+			android:textColor="@drawable/gray1"
+			android:textSize="13sp"/>
+		
+		<RadioButton 
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:button="@null"
+			android:layout_weight="1"/>
+		
+	</RadioGroup>
+</LinearLayout>

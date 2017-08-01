@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_comment_rl"
+    android:orientation="vertical"
+    android:background="@drawable/selector_gridview_destination">
+    
+    
+    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical|center_horizontal"
+		    android:layout_margin="5dp">
+		    
+		    <ImageView
+		        android:id="@+id/iv_comment_tx"
+				android:layout_width="65dp"
+		        android:layout_height="65dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:padding="3dp"/>
+		    
+		    <LinearLayout 
+		        android:orientation="vertical"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/iv_comment_tx"
+		        android:gravity="center_vertical"
+		        android:layout_centerVertical="true">
+			    <TextView
+			        android:id="@+id/tv_comment_username"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="2dp"
+			        android:text="@string/ttnote"
+			        android:textColor="@drawable/black"
+			        android:textSize="16sp"/>
+			    
+			    <TextView
+			        android:id="@+id/tv_comment_date"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="2dp"
+			        android:text="@string/note"
+			        android:textColor="@drawable/gray"
+			        android:textSize="11sp"/>
+			</LinearLayout>
+			
+			<Button
+			    android:id="@+id/bt_comment_repay"
+		        android:layout_width="55dp"
+		        android:layout_height="25dp"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:gravity="center"
+		        android:clickable="true"
+		        android:textSize="16sp"
+		        android:scaleType="matrix"
+		        android:textColor="@drawable/gray1"
+				android:text="@string/hf"
+				android:background="@drawable/shape_repay_button"/>
+		</RelativeLayout>
+		
+    <TextView
+		android:id="@+id/tv_comment_content"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="2dp"
+		android:text="@string/ttnote"
+		android:textColor="@drawable/black"
+		android:textSize="16sp"
+		android:layout_marginLeft="20dp"/>
+    
+    <LinearLayout 
+        android:id="@+id/ll_comment_repay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp">
+		<TextView
+			android:layout_width="2dp"
+			android:layout_height="fill_parent"
+			android:padding="2dp"
+			android:background="@drawable/gray1"/>	
+		<RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">	
+        <TextView
+			android:id="@+id/tv_comment_respdate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="2dp"
+			android:text="@string/ttnote"
+			android:textColor="@drawable/gray1"
+			android:textSize="16sp"
+			android:layout_marginLeft="2dp"/>
+        <TextView
+			android:id="@+id/tv_comment_respcontent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="2dp"
+			android:text="@string/ttnote"
+			android:textColor="@drawable/gray1"
+			android:textSize="16sp"
+			android:layout_below="@id/tv_comment_respdate"
+			android:layout_marginLeft="2dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

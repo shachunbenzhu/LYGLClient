@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+    
+    <TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="10dp"
+	    android:background="@drawable/bg_graywhite"/>
+    
+    <LinearLayout 
+        android:id="@+id/ll_notelist_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="178dp"
+        android:orientation="vertical">
+        
+        <TextView 
+	        android:id="@+id/tv_notelist_month"
+	        android:layout_width="45dp"
+	        android:gravity="center"
+	        android:layout_height="wrap_content"
+	        android:textColor="@drawable/white"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:background="@drawable/shape_day_textview"
+	        android:text="@string/month"
+	        android:textSize="13sp"
+	        android:padding="3dp"/>
+        
+        <TextView 
+	        android:id="@+id/tv_notelist_day"
+	        android:layout_width="45dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textColor="@drawable/red"
+	        android:layout_marginLeft="10dp"
+	        android:padding="3dp"
+	        android:background="@drawable/shape_month_textview"
+	        android:text="@string/day"
+	        android:textSize="23sp"/>
+        
+        <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical|center_horizontal"
+		    android:padding="5dp"
+		    android:layout_marginTop="40dp">
+		    
+		    <ImageView
+		        android:id="@+id/iv_notelist_tx"
+				android:layout_width="72dp"
+		        android:layout_height="72dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:padding="8dp"/>
+		
+			<com.cn.ncist.rq.module.ChildTextView
+				android:id="@+id/tv_notelist_user"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:padding="2dp"
+				android:text="@string/ttnote"
+				android:textColor="@drawable/white"
+				android:textSize="18sp"
+				android:layout_toRightOf="@id/iv_notelist_tx"/>
+		</RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+			    
+		<TextView 
+			android:id="@+id/tv_notelist_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="false"
+			android:textColor="@drawable/black"
+			android:textSize="15sp"
+			android:layout_centerVertical="true"
+			android:padding="5dp"
+			android:text="@string/title"
+			android:layout_margin="5dp"/>
+	</RelativeLayout>
+	<RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp">
+			    
+		<RadioButton 
+			android:id="@+id/rb_notelist_llnum"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/common_eye"
+			android:textColor="@drawable/gray"
+			android:textSize="13sp"
+			android:button="@null"
+			android:gravity="center_horizontal"
+			android:layout_centerVertical="true"
+			android:padding="3dp"/>
+		<RadioButton 
+			android:id="@+id/rb_notelist_plnum"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/common_comment"
+			android:textColor="@drawable/gray"
+			android:textSize="13sp"
+			android:button="@null"
+			android:gravity="center_horizontal"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/rb_notelist_llnum"
+			android:padding="3dp"
+			android:layout_marginLeft="4dp"/>	
+			
+		<RadioButton 
+			android:id="@+id/rb_notelist_zannum"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/common_zan"
+			android:textColor="@drawable/gray"
+			android:textSize="13sp"
+			android:button="@null"
+			android:gravity="center_horizontal"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/rb_notelist_plnum"
+			android:padding="3dp"
+			android:layout_marginLeft="4dp"/>
+	</RelativeLayout>
+</LinearLayout>

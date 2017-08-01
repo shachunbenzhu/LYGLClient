@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#ffffff"
+    tools:context=".AboutUsActivity"
+    android:orientation="vertical" >
+    
+   	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginTop="5dp">
+        <Button 
+            android:id="@+id/bt_aboutus_back"
+            android:layout_width="23dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_icon_back"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"/>
+        
+        <com.cn.ncist.rq.module.TitleTextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/aboutxcgl"
+            android:textSize="25sp"
+            android:padding="3dp"/>
+    </RelativeLayout>
+    
+   	<ImageView 
+   	    android:layout_gravity="center_horizontal"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:src="@drawable/app_icon"
+   	    android:layout_marginTop="20dp"/>
+   	
+   	<RelativeLayout 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:gravity="center_horizontal"
+   	    android:padding="13dp">
+   	    <TextView 
+   	        android:id="@+id/tv_aboutus_bb"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:text="@string/bb"
+   	        android:textColor="@drawable/gray"
+   	        android:textSize="17sp"/>
+   	    
+   	    <TextView 
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:text="@string/dqbb"
+   	        android:textColor="@drawable/blueq"
+   	        android:textStyle="bold"
+   	        android:layout_toRightOf="@id/tv_aboutus_bb"
+   	        android:textSize="17sp"/>
+   	</RelativeLayout>
+	
+   	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/desc"
+		android:textSize="15sp"
+		android:singleLine="false"
+		android:padding="10dp"/>
+
+   	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/kh"
+		android:textSize="15sp"
+		android:padding="10dp"/>
+   	
+   	<LinearLayout 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:padding="5dp">
+	   	<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="1dp"
+			android:background="@drawable/qgray"/>
+   	</LinearLayout>
+   	
+   	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/contactus"
+		android:textSize="17sp"
+		android:padding="15dp"
+		android:layout_marginLeft="5dp"
+		android:textStyle="bold"/>
+   	
+   	<RelativeLayout 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:padding="3dp"
+   	    android:layout_marginLeft="5dp">
+   	    <TextView 
+   	        android:id="@+id/tv_aboutus_yx"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:text="@string/yx"
+   	        android:textSize="14sp"/>
+   	    
+   	    <TextView 
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:text="@string/jtyx"
+   	        android:textColor="@drawable/blueq"
+   	        android:textStyle="bold"
+   	        android:layout_toRightOf="@id/tv_aboutus_yx"
+   	        android:textSize="14sp"/>
+   	</RelativeLayout>
+   	
+   	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/qq"
+		android:textSize="14sp"
+		android:layout_marginLeft="5dp"
+		android:padding="3dp"/>
+   	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/bq"
+		android:textSize="14sp"
+		android:padding="15dp"
+		android:textColor="@drawable/gray"/>
+</LinearLayout>

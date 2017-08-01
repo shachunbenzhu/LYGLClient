@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pinyin">LIJIANG</string>
+    <string name="mshi">美食</string>
+    <string name="gw">购物</string>
+    <string name="wl">玩乐</string>
+    <string name="kdgl">口袋攻略</string>
+    
+    <string name="cyx">初印象</string>
+    <string name="tjlx">小编推荐路线</string>
+    <string name="ysh">酒吧夜生活</string>
+    <string name="zxgl">最新攻略</string>
+    <string name="rmwt">N大热门问题</string>
+    <string name="pzzn">穿衣拍照指南</string>
+    <string name="complete">查看完整攻略</string>
+    <string name="xyz">下一站去哪儿</string>
+    
+    <string name="fxd">分享到</string>
+    <string name="wb">新浪微博</string>
+    <string name="txwb">腾讯微博</string>
+    <string name="wx">微信好友</string>
+    <string name="pyq">微信朋友圈</string>
+    <string name="qqhy">QQ</string>
+    <string name="kj">QQ空间</string>
+    <string name="copy">复制</string>
+
+
+</resources>

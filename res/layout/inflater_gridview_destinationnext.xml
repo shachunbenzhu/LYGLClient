@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/selector_gridview_destination"
+    android:descendantFocusability="blocksDescendants">
+    
+    <Button 
+		android:id="@+id/bt_destinationdetile_next"
+		android:layout_width="80dp"
+		android:layout_height="wrap_content"
+		android:text="@string/cyx"
+		android:textSize="13sp"
+		android:textColor="@drawable/black"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:background="@drawable/shape_destinationdetile_button"
+		android:layout_margin="2dp"/>
+</LinearLayout>

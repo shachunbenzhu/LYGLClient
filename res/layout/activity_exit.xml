@@ -1,0 +1,57 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    tools:context=".ExitActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/shape_exit_bg"
+    android:id="@+id/ll_exit" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:textSize="22sp"
+        android:textColor="@drawable/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_confirm"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@drawable/white"
+        android:layout_marginTop="10dp"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        
+        <Button 
+            android:id="@+id/bt_exit_yes"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:background="@drawable/selector_btn_exit_yes"
+            android:textColor="@drawable/black"/>
+        
+        <Button 
+            android:id="@+id/bt_exit_no"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_btn_exit_no"
+            android:textColor="@drawable/black"/>
+        
+    </LinearLayout>
+   
+
+</LinearLayout>

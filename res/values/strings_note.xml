@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="destinationnote">目的地攻略</string>
+    <string name="notea">游记</string>
+    <string name="alldes">全部目的地</string>
+    <string name="sx">筛选</string>
+    <string name="tj">推荐</string>
+    
+    <string name="gd">更多</string>
+    <string name="ydu">阅读 </string>
+    <string name="xcts">行程天数:</string>
+    <string name="rjhf">人均花费:</string>
+    <string name="hscx">和谁出行:</string>
+    
+    <string name="tpfx">图片分享</string>
+    <string name="ymfx">页面分享</string>
+    <string name="wtms">无图模式</string>
+    
+    <string name="zan">赞</string>
+    <string name="pl">评论</string>
+    
+    <string name="tjpl">添加评论</string>
+    <string name="txnr">填写内容</string>
+    <string name="hf">回复</string>
+
+
+</resources>

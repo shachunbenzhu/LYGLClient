@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="search">搜索目的地  景点  游记</string>
+    <string name="log">管理员登录</string>
+    <string name="scan">扫一扫</string>
+    <string name="about">关于我们</string>
+    <string name="dw">定位</string>
+    <string name="gl">攻略</string>
+    <string name="jd">景点</string>
+    <string name="yd">预定</string>
+    <string name="ttnote">头条游记</string>
+    <string name="note">最新最精华的游记</string>
+    <string name="title">小两口辞职走世界之4个月环游欧洲</string>
+    <string name="date">2017-01-01</string>
+    <string name="llnum">0</string>
+    <string name="plnum">0</string>
+
+
+</resources>

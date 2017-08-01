@@ -1,0 +1,78 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:id="@+id/rl_main">
+
+    <RadioGroup 
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:orientation="horizontal"
+	    android:id="@+id/rg_main_rg"
+	    android:gravity="center"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/white">
+	    
+	    <RadioButton 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:id="@+id/rb_main_homepage"
+	        android:gravity="center"
+	        android:button="@null"
+	        android:checked="true"
+	        android:layout_weight="1"
+	        android:drawableTop="@drawable/selector_rb_main_homepage"/>
+
+	    <RadioButton
+	        android:id="@+id/rb_main_destination"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:button="@null"
+	        android:drawableTop="@drawable/selector_rb_main_destination"
+	        android:gravity="center" />
+	    
+	    <RadioButton 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:id="@+id/rb_main_writenote"
+	        android:layout_gravity="top"
+	        android:button="@null"
+	        android:layout_weight="1"
+	        android:drawableTop="@drawable/selector_rb_main_writenote"/> 
+	    
+	    <RadioButton 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/rb_main_note"
+	        android:gravity="center"
+	        android:button="@null"
+	        android:layout_weight="1"
+	        android:drawableTop="@drawable/selector_rb_main_note"/>
+	    
+	    <RadioButton 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/rb_main_service"
+	        android:gravity="center"
+	        android:button="@null"
+	        android:layout_weight="1"
+	        android:drawableTop="@drawable/selector_rb_main_service"/>
+	   
+	</RadioGroup>
+	
+    <TextView 
+        android:id="@+id/tv_main_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_above="@id/rg_main_rg"/>
+   
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_main_rg"/>
+</RelativeLayout>

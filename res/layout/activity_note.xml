@@ -1,0 +1,114 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#ffffff"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginTop="5dp">
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+	        <com.cn.ncist.rq.module.TitleTextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/destinationnote"
+	            android:textSize="25sp"
+	            android:padding="1dp"
+	            android:textColor="@drawable/black"/><!-- com.cn.ncist.rq.module.Title -->
+            <com.cn.ncist.rq.module.TitleTextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/notea"
+	            android:textSize="17sp"
+	            android:padding="1dp"
+	            android:textColor="@drawable/black"/>
+		</LinearLayout>	 
+		
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:layout_centerVertical="true">
+        <Button 
+            android:id="@+id/bt_note_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/note_search1"
+            android:layout_marginRight="25dp"/>
+        <Button 
+            android:id="@+id/bt_note_mynote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/note_mynote"/>
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/bg_qgraywhite"
+	    android:padding="10dp">
+        
+	    <RadioButton 
+	        android:id="@+id/rb_note_des"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/alldes"
+			android:textSize="15sp"
+			android:padding="3dp"
+			android:layout_margin="5dp"
+			android:textColor="@drawable/blueset"
+			android:drawableRight="@drawable/common_ico_filter_pressed"
+			android:button="@null"/>
+	    <RadioButton 
+	        android:id="@+id/rb_note_sx"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/sx"
+			android:textSize="15sp"
+			android:textColor="@drawable/black"
+			android:padding="3dp"
+			android:layout_centerHorizontal="true"
+			android:layout_margin="5dp"
+			android:drawableRight="@drawable/common_ico_filter"
+			android:button="@null"/>
+	    <RadioButton 
+	        android:id="@+id/rb_note_tj"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/tj"
+			android:textSize="15sp"
+			android:textColor="@drawable/black"
+			android:padding="3dp"
+			android:layout_alignParentRight="true"
+			android:layout_margin="5dp"
+			android:drawableRight="@drawable/common_ico_arrow_down"
+			android:button="@null"/>
+	</RelativeLayout>
+	
+	<LinearLayout 
+        android:id="@+id/ll_note_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+		<ListView 
+			android:id="@+id/lv_note_list"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent"
+			android:scrollbars="vertical"
+			android:background="@drawable/bg_graywhite"/>
+	</LinearLayout>
+</LinearLayout>

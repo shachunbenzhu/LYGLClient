@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" >
+    
+    <TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="10dp"
+	    android:background="@drawable/bg_graywhite"/>
+    
+	<RelativeLayout 
+        android:id="@+id/rl_mynote_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="178dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">        
+    </RelativeLayout>
+    <RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+			    
+		<TextView 
+			android:id="@+id/tv_mynote_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="false"
+			android:textColor="@drawable/black"
+			android:textSize="15sp"
+			android:layout_centerVertical="true"
+			android:padding="5dp"
+			android:text="@string/title"
+			android:layout_margin="5dp"/>
+	</RelativeLayout>
+	<RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+			    
+		<RadioButton 
+			android:id="@+id/rb_mynote_llnum"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/common_eye"
+			android:textColor="@drawable/gray"
+			android:textSize="13sp"
+			android:button="@null"
+			android:gravity="center_horizontal"
+			android:layout_centerVertical="true"
+			android:padding="3dp"/>
+		<RadioButton 
+			android:id="@+id/rb_mynote_plnum"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/common_comment"
+			android:textColor="@drawable/gray"
+			android:textSize="13sp"
+			android:button="@null"
+			android:gravity="center_horizontal"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/rb_mynote_llnum"
+			android:padding="3dp"
+			android:layout_marginLeft="4dp"/>	
+			
+		<RadioButton 
+			android:id="@+id/rb_mynote_zannum"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/common_zan"
+			android:textColor="@drawable/gray"
+			android:textSize="13sp"
+			android:button="@null"
+			android:gravity="center_horizontal"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/rb_mynote_plnum"
+			android:padding="3dp"
+			android:layout_marginLeft="4dp"/>
+		
+		
+		<TextView 
+			android:id="@+id/tv_mynote_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@drawable/gray"
+			android:textSize="15sp"
+			android:layout_centerVertical="true"
+			android:padding="5dp"
+			android:text="@string/date"
+			android:layout_margin="5dp"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="5dp"/>
+	</RelativeLayout>
+</LinearLayout>

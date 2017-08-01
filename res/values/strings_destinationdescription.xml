@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gs">景点概述</string>
+    
+    <string name="xqzb">行前准备</string>
+    
+    <string name="bbwp">必备物品</string>
+    <string name="sfz">身份证（必备），学生证，驾照（视个人情况）。</string>
+    <string name="sji">手机、充电器、摄影器材、移动电源。</string>
+    <string name="yhk">银行卡，少量现金。</string>
+    
+	<string name="yp">药品</string>
+	<string name="ydian">景点有许多药店，普通药品购买方便。不过若有个人常用药，还请备定。</string>
+	
+	<string name="fsyp">防晒用品</string>
+	<string name="fss">爱美女士一定要带好防晒霜。</string>
+	<string name="fssq">墨镜、遮阳帽、旅行头巾也是防晒的神器。</string>
+	
+	<string name="xhyp">洗护用品</string>
+	<string name="bfp">气候干燥，女生们带一些保湿护肤品（如润唇膏、保湿面膜、喷雾）很有必要；</string>
+	<string name="zdxhyp">如果住的是比较平价的酒店或民宿，洗发露和沐浴露大多质量不好，建议可以自带小瓶旅行装的洗护用品。</string>
+	
+
+</resources>

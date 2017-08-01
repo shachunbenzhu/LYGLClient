@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_destinationstrategy_rl"
+    android:background="@drawable/selector_gridview_destination"
+    android:layout_margin="5dp">
+    
+    <RelativeLayout
+		android:id="@+id/rl_destinationstrategy_item"
+		android:layout_width="80dp"
+		android:layout_height="100dp"
+		android:layout_centerVertical="true">
+	    <TextView 
+	        android:id="@+id/tv_destinationstrategy_pinyin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="@drawable/white"
+	        android:textStyle="bold"
+	        android:layout_marginTop="10dp"/>
+	</RelativeLayout>
+	
+    <TextView 
+		android:id="@+id/tv_destinationstrategy_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/black"
+		android:layout_margin="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_centerVertical="true"
+		android:layout_toRightOf="@id/rl_destinationstrategy_item"/>
+    
+    <ImageView 
+		android:id="@+id/iv_destinationstrategy_download"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/strategycatalog_download"
+		android:layout_margin="10dp"/>
+    
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="zxfw">咨询服务</string>
+    <string name="kf">客服</string>
+    <string name="searchser">请输入您的问题</string>
+    <string name="zxzx">在线咨询</string>
+	<string name="kfgzsj">客服工作时间</string>
+	<string name="cywt">常用问题</string>
+	
+	<string name="gnjp">国内机票</string>
+	<string name="gjjp">国际机票</string>
+	<string name="qcp">汽车票</string>
+	<string name="gnyc">国内用车</string>
+	<string name="jdmp">景点门票</string>
+	<string name="gny">国内游</string>
+	<string name="bsgt">巴士跟团</string>
+	<string name="cjy">出境游</string>
+	<string name="dyp">电影票</string>
+	<string name="hwwl">海外玩乐</string>
+	<string name="jrlc">金融理财</string>
+	<string name="ccbt">程程白条</string>
+	<string name="blh">百旅会</string>
+	
+	<string name="zd">致电携程客服</string>
+	<string name="sj">手机：15732632715</string>
+	<string name="xgkf">香港客服：+852-3069-9966</string>
+	<string name="sjmy">手机(境外漫游):+86-21-3406-4888</string>
+	
+	<string name="cy">常用</string>
+	<string name="tdgq">退订改期</string>
+	<string name="cywti">出游问题</string>
+	<string name="hyhd">会员活动</string>
+</resources>

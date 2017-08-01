@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="order">其他预订</string>
+    <string name="jt">交通</string>
+    <string name="jp">机票</string>
+    <string name="hcp">火车票</string>
+    <string name="cp">车票-船票</string>
+    <string name="zc">专车-租车</string>
+    
+    <string name="zs">住宿</string>
+    <string name="jdian">酒店</string>
+    <string name="ms">民宿-客栈</string>
+    <string name="tjjd">特价酒店</string>
+    
+    <string name="dj">度假</string>
+    <string name="ly">旅游</string>
+    <string name="zby">周边游</string>
+    <string name="mpwl">门票玩乐</string>
+    <string name="yl">游轮</string>
+    
+    <string name="cxbb">出行必备</string>
+    <string name="wf">WIFI</string>
+    <string name="bx">保险</string>
+    <string name="ypsc">优品商城</string>
+
+
+</resources>

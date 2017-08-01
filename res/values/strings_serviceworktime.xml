@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gb">广播</string>
+    <string name="kftitle">1.  客服工作时间</string>
+    <string name="jqt">【景区/出境/国内游/巴士跟团/周边游】</string>
+    <string name="jqtime">在线客服：07:00-24:00/电话客服：08:00-22:30</string>
+    
+	<string name="dypt">【电影票】</string>
+    <string name="dyptime">在线客服：10:00-18:30/电话客服：10:00-18:30</string>
+    
+    <string name="hcpt">【火车票/汽车票】</string>
+    <string name="hcptime">在线客服：7:00-24:00/电话客服：07:00-24:00</string>
+    
+    <string name="gnjpt">【国内机票/国内酒店】</string>
+    <string name="gnjptime">在线客服：08:00-24:00/电话客服：00:00-24:00</string>
+    
+    <string name="gjjpt">【国际机票】</string>
+    <string name="gjjptime">在线客服：00:00-24:00/电话客服：00:00-24:00</string>
+    
+    <string name="ylt">【邮轮】</string>
+    <string name="yltime">在线客服：08:30-22:00/电话客服：08:00-22:00</string>
+    
+    <string name="jrlct">【金融理财/程程白条】</string>
+    <string name="jrlctime">在线客服：09:00-21:00/电话客服：08:00-21:00</string>
+    
+    <string name="qzt">【签证】</string>
+    <string name="qztime">在线客服：08:45-17:45/电话客服：08:00-22:00</string>
+    
+
+
+</resources>

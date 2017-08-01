@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_nationlist_rl"
+    android:background="@drawable/bg_graywhite"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+		android:id="@+id/rl_bar_layout"
+		android:layout_width="match_parent"
+		android:layout_height="45dp">
+	    <TextView 
+	        android:id="@+id/tv_nation_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textColor="@drawable/black"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="10dp"/>
+	    <ImageView
+			android:id="@+id/iv_nation_arrow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/common_icon_arrow_down_small"
+			android:tag="service_arrow" />
+	</RelativeLayout>
+	<com.cn.ncist.rq.foldingmenu.FoldingLayout
+		android:id="@+id/fl_nation_item"
+		android:layout_width="match_parent"
+		android:layout_height="135dp"
+		android:tag="service_item" >
+	    
+	</com.cn.ncist.rq.foldingmenu.FoldingLayout>
+	
+	<View
+		android:id="@+id/v_nation_bottom_view"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="10dp"
+		android:visibility="invisible" />
+</LinearLayout>

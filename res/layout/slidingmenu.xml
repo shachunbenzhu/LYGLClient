@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--<com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >  -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@drawable/white" >
+
+            <RelativeLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="7dp"
+		        android:layout_margin="10dp">
+		        <Button 
+		            android:id="@+id/bt_slidingmenu_scan"
+		            android:layout_width="23dp"
+		            android:layout_height="23dp"
+		            android:layout_centerVertical="true"
+		            android:background="@drawable/slidingmenu_scan"
+		            android:padding="5dp"/>
+		        
+		        <com.cn.ncist.rq.module.TitleTextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_centerHorizontal="true"
+		            android:text="@string/my"
+		            android:textSize="25sp"
+		            android:textColor="@drawable/black"
+		            android:padding="3dp"/>
+		    </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/slidingmenu_my_bg">
+
+                <ImageView
+                    android:id="@+id/iv_slidemenu_touxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_touxiang_imageview"
+                    android:src="@drawable/common_default_tx_wawa" />
+
+                <TextView
+                    android:id="@+id/tv_slidemenu_click_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_slidemenu_touxiang"
+                    android:text="@string/click_login"
+                    android:textColor="@drawable/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20dp" >
+				<RelativeLayout 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1">
+	                <TextView
+	                    android:id="@+id/tv_slidemenu_qb"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/qb"
+	                    android:textSize="14sp"
+	                    android:textColor="@drawable/black"
+	                    android:padding="5dp"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_centerVertical="true"/>
+	                
+	                <TextView
+	                    android:layout_width="1dp"
+	                    android:layout_height="20dp"
+	                    android:layout_centerVertical="true"
+	                    android:background="@drawable/qgray"
+	                    android:padding="5dp"
+	                    android:layout_alignParentRight="true"/>
+				</RelativeLayout>
+				
+				<RelativeLayout 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1">
+	                <TextView
+	                    android:id="@+id/tv_slidemenu_jf"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/jf"
+	                    android:textSize="14sp"
+	                    android:textColor="@drawable/black"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_centerVertical="true"/>
+	                <TextView
+	                    android:layout_width="1dp"
+	                    android:layout_height="20dp"
+	                    android:background="@drawable/qgray"
+	                    android:padding="5dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerVertical="true"/>
+				</RelativeLayout>
+				
+				<RelativeLayout 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1">
+	                <TextView
+	                    android:id="@+id/tv_slidemenu_yhq"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/yhq"
+	                    android:textSize="14sp"
+	                    android:textColor="@drawable/black"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_centerVertical="true"/>
+	                <TextView
+	                    android:layout_width="0dp"
+	                    android:layout_height="20dp"
+	                    android:background="@drawable/qgray"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerVertical="true"/>
+               	</RelativeLayout>
+            </LinearLayout>
+            
+            <TextView 
+			    android:background="@drawable/bg_graywhite"
+			    android:layout_height="10dp"
+			    android:layout_width="fill_parent"/>
+            
+            <RelativeLayout 
+			    android:id="@+id/rl_slidingmenu_mynote"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical|center_horizontal"
+			    android:padding="3dp">
+		    
+			    <ImageView
+			        android:id="@+id/iv_slidingmenu_wdyj"
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:padding="3dp"
+			        android:layout_marginLeft="8dp"
+			        android:src="@drawable/slidingmenu_wdyj" />
+	
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="2dp"
+			        android:layout_marginLeft="5dp"
+			        android:text="@string/wdyj"
+			        android:textColor="@drawable/black"
+			        android:textSize="16sp"
+			        android:layout_toRightOf="@id/iv_slidingmenu_wdyj"
+			        android:layout_centerVertical="true"/>
+			    
+				<ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:clickable="true"
+			        android:scaleType="matrix"
+			        android:src="@drawable/common_icon_arrowright" />
+			</RelativeLayout>
+			<TextView 
+			    android:background="@drawable/bg_graywhite"
+			    android:layout_height="1dp"
+			    android:layout_width="fill_parent"/>
+			<RelativeLayout 
+			    android:id="@+id/rl_slidingmenu_myshoucang"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical|center_horizontal"
+			    android:padding="3dp">
+		    
+			    <ImageView
+			        android:id="@+id/iv_slidingmenu_wdsc"
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:padding="3dp"
+			        android:layout_marginLeft="8dp"
+			        android:src="@drawable/slidingmenu_wdsc" />
+	
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="2dp"
+			        android:layout_marginLeft="5dp"
+			        android:text="@string/wdsc"
+			        android:textColor="@drawable/black"
+			        android:textSize="16sp"
+			        android:layout_toRightOf="@id/iv_slidingmenu_wdsc"
+			        android:layout_centerVertical="true"/>
+			    
+				<ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:clickable="true"
+			        android:scaleType="matrix"
+			        android:src="@drawable/common_icon_arrowright" />
+			</RelativeLayout>
+
+			<TextView 
+			    android:background="@drawable/bg_graywhite"
+			    android:layout_height="10dp"
+			    android:layout_width="fill_parent"/>
+			<RelativeLayout 
+			    android:id="@+id/rl_slidingmenu_wsq"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical|center_horizontal"
+			    android:padding="3dp">
+		    
+			    <ImageView
+			        android:id="@+id/iv_slidingmenu_wsq"
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:padding="3dp"
+			        android:layout_marginLeft="8dp"
+			        android:src="@drawable/slidingmenu_wsq" />
+	
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="2dp"
+			        android:layout_marginLeft="5dp"
+			        android:text="@string/wsq"
+			        android:textColor="@drawable/black"
+			        android:textSize="16sp"
+			        android:layout_toRightOf="@id/iv_slidingmenu_wsq"
+			        android:layout_centerVertical="true"/>
+			    
+				<ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:clickable="true"
+			        android:scaleType="matrix"
+			        android:src="@drawable/common_icon_arrowright" />
+			</RelativeLayout>
+			<TextView 
+			    android:background="@drawable/bg_graywhite"
+			    android:layout_height="1dp"
+			    android:layout_width="fill_parent"/>
+			<RelativeLayout 
+			    android:id="@+id/rl_slidingmenu_lygw"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical|center_horizontal"
+			    android:padding="3dp">
+		    
+			    <ImageView
+			        android:id="@+id/iv_slidingmenu_lygw"
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:padding="3dp"
+			        android:layout_marginLeft="8dp"
+			        android:src="@drawable/slidingmenu_lygw" />
+	
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="2dp"
+			        android:layout_marginLeft="5dp"
+			        android:text="@string/lygw"
+			        android:textColor="@drawable/black"
+			        android:textSize="16sp"
+			        android:layout_toRightOf="@id/iv_slidingmenu_lygw"
+			        android:layout_centerVertical="true"/>
+			    
+				<ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:clickable="true"
+			        android:scaleType="matrix"
+			        android:src="@drawable/common_icon_arrowright" />
+			</RelativeLayout>
+			<TextView 
+			    android:background="@drawable/bg_graywhite"
+			    android:layout_height="fill_parent"
+			    android:layout_width="fill_parent"/>
+        </LinearLayout>
+    <!-- </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu> -->
+
+</LinearLayout>

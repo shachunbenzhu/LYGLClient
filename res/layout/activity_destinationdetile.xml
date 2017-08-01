@@ -1,0 +1,367 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    tools:context=".DestinationDetileActivity">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:id="@+id/ll_destinationdetile_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:background="@drawable/common_default_bg">
+
+        <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="3dp"
+	        android:layout_marginTop="10dp">
+			<Button 
+	            android:id="@+id/bt_destinationdetile_back"
+	            android:layout_width="23dp"
+	            android:layout_height="18dp"
+	            android:background="@drawable/common_icon_back_white"
+	            android:layout_marginLeft="10dp"
+	            android:layout_centerVertical="true"/>
+
+	        <Button 
+	            android:id="@+id/bt_destinationdetile_share"
+	            android:layout_width="23dp"
+	            android:layout_height="18dp"
+	            android:background="@drawable/common_icon_share"
+	            android:layout_marginRight="10dp"
+	            android:layout_alignParentRight="true"/>
+	    </RelativeLayout>
+        <TextView 
+            android:id="@+id/tv_destinationdetile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/word"
+            android:textColor="@drawable/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:layout_marginTop="15dp"/>
+       	<TextView 
+       	    android:id="@+id/tv_destinationdetile_pinyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/pinyin"
+            android:textColor="@drawable/white"
+            android:textSize="23sp"/>
+        
+        <TextView 
+       	    android:id="@+id/tv_destinationdetile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/word"
+            android:textColor="@drawable/white"
+            android:textSize="17sp"
+            android:padding="3dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="3dp"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="4dp"
+	    android:layout_marginTop="10dp">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+	        <RadioButton 
+	            android:id="@+id/rb_destinationdetile_jd"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/destinationdetile_jd"
+	            android:text="@string/jd"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/rb_destinationdetile_ms"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/destinationdetile_ms"
+	            android:text="@string/mshi"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/rb_destinationdetile_gw"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/destinationdetile_gw"
+	            android:text="@string/gw"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+	        <RadioButton 
+	            android:id="@+id/rb_destinationdetile_wl"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/destinationdetile_wl"
+	            android:text="@string/wl"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+	        <RadioButton 
+	            android:id="@+id/rb_destinationdetile_jp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/destinationdetile_jp"
+	            android:text="@string/jp"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/rb_destinationdetile_zs"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/destinationdetile_zs"
+	            android:text="@string/zs"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/rb_destinationdetile_dj"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/destinationdetile_dj"
+	            android:text="@string/dj"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/rb_destinationdetile_hcp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/destinationdetile_hcp"
+	            android:text="@string/hcp"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+        </LinearLayout>
+	    
+	</LinearLayout>
+	
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/bg_graywhite"/>
+    
+    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:layout_marginTop="10dp">
+	        <TextView 
+	            android:layout_width="135dp"
+	            android:layout_height="1dp"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/qgray"/>
+	        
+	        <com.cn.ncist.rq.module.ChildTextView
+	            android:id="@+id/tv_destinationdetile_gl"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:padding="2dp"
+	            android:text="@string/kdgl"
+	            android:textSize="15sp"
+	            android:textColor="@drawable/dgreen" />
+	        
+	        <TextView 
+	            android:layout_width="130dp"
+	            android:layout_height="1dp"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/qgray"
+	            android:layout_marginLeft="8dp"
+	            android:layout_toRightOf="@id/tv_destinationdetile_gl"/>
+	    </RelativeLayout>
+	
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="4dp"
+	    android:layout_marginTop="5dp">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+	        <Button 
+	            android:id="@+id/bt_destinationdetile_cyx"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/cyx"
+	            android:textSize="13sp"
+	            android:textColor="@drawable/black"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/shape_destinationdetile_button"
+	            android:layout_margin="2dp"/>
+	        
+	        <Button 
+	            android:id="@+id/bt_destinationdetile_tjlx"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/tjlx"
+	            android:textSize="13sp"
+	            android:textColor="@drawable/black"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/shape_destinationdetile_button"
+	            android:layout_margin="2dp"/>
+	        
+	        <Button 
+	            android:id="@+id/bt_destinationdetile_ysh"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/ysh"
+	            android:textSize="13sp"
+	            android:textColor="@drawable/black"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/shape_destinationdetile_button"
+	            android:layout_margin="2dp"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp">
+	        <Button 
+	            android:id="@+id/bt_destinationdetile_zxgl"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/zxgl"
+	            android:textSize="13sp"
+	            android:textColor="@drawable/black"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:layout_margin="2dp"
+	            android:background="@drawable/shape_destinationdetile_button"/>
+	        
+	        <Button 
+	            android:id="@+id/bt_destinationdetile_rmwt"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/rmwt"
+	            android:textSize="13sp"
+	            android:textColor="@drawable/black"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:layout_margin="2dp"
+	            android:background="@drawable/shape_destinationdetile_button"/>
+	        
+	        <Button 
+	            android:id="@+id/bt_destinationdetile_pzzn"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:text="@string/pzzn"
+	            android:textSize="13sp"
+	            android:textColor="@drawable/black"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:layout_margin="2dp"
+	            android:background="@drawable/shape_destinationdetile_button"/>
+	        
+        </LinearLayout>
+	    
+	</LinearLayout>
+	
+    <Button 
+		android:id="@+id/bt_destinationdetile_complete"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/common_icon_share"
+		android:layout_gravity="center"
+		android:text="@string/complete"
+		android:textColor="@drawable/blueset"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/bg_graywhite"/>
+    
+    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:layout_marginTop="10dp">
+	        <TextView 
+	            android:layout_width="135dp"
+	            android:layout_height="1dp"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/qgray"/>
+	        
+	        <com.cn.ncist.rq.module.ChildTextView
+	            android:id="@+id/tv_destinationdetile_xyz"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:padding="2dp"
+	            android:text="@string/xyz"
+	            android:textSize="15sp"
+	            android:textColor="@drawable/dgreen" />
+	        
+	        <TextView 
+	            android:layout_width="130dp"
+	            android:layout_height="1dp"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/qgray"
+	            android:layout_marginLeft="8dp"
+	            android:layout_toRightOf="@id/tv_destinationdetile_xyz"/>
+	    </RelativeLayout>
+	
+    <LinearLayout
+        android:id="@+id/ll_destinationdetile_llgv" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="4dp"
+	    android:layout_marginTop="5dp">
+	    <GridView 
+	        android:id="@+id/gv_destinationdetile_gv"
+	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="3"/>
+	</LinearLayout>
+
+</LinearLayout>
+</ScrollView>

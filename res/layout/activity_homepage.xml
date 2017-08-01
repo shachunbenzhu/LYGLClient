@@ -1,0 +1,298 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#ffffff"
+	android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+	    <Button  
+	        android:id="@+id/bt_homepage_user"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/homepage_tx"/>
+        	
+        <EditText
+            android:id="@+id/et_homepage_search"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_search_edittext"
+            android:drawableLeft="@drawable/common_icon_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint="@string/search"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/ib_homepage_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/homepage_setting"
+            android:background="@drawable/transparent" />
+    </RelativeLayout>
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="5dp"
+	    android:layout_marginTop="10dp">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+	        <RadioButton 
+	            android:id="@+id/rb_homepage_dw"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/homepage_dw"
+	            android:text="@string/dw"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/rb_homepage_hcp"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/homepage_hcp"
+	            android:text="@string/hcp"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/rb_homepage_ms"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/homepage_ms"
+	            android:text="@string/mshi"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/rb_homepage_gl"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/homepage_gl"
+	            android:text="@string/gl"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+	        
+            <RadioButton 
+	            android:id="@+id/rb_homepage_jp"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/homepage_jp"
+	            android:text="@string/jp"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+            
+	        <RadioButton 
+	            android:id="@+id/rb_homepage_jdian"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/homepage_jdian"
+	            android:text="@string/jdian"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/rb_homepage_yd"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/homepage_qitaorder"
+	            android:text="@string/yd"
+	            android:textColor="@drawable/black"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/rb_homepage_kong"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:button="@null"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"/>
+        </LinearLayout>
+	    
+	</LinearLayout>
+	
+	<TextView 
+	    android:background="@drawable/qgray"
+	    android:layout_height="10dp"
+	    android:layout_width="fill_parent"/>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+		<RelativeLayout 
+		    android:id="@+id/rl_homepage_ttnote"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical|center_horizontal"
+		    android:padding="5dp">
+		    
+		    <ImageView
+		        android:id="@+id/iv_homepage_tb"
+				android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:padding="8dp"
+		        android:src="@drawable/homepage_ttnote" />
+		    
+		    <LinearLayout 
+		        android:orientation="vertical"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/iv_homepage_tb"
+		        android:gravity="center_vertical"
+		        android:layout_centerVertical="true">
+			    <TextView
+			        android:id="@+id/tv_homepage_ttnote"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="2dp"
+			        android:text="@string/ttnote"
+			        android:textColor="@drawable/black"
+			        android:textSize="16sp"/>
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="2dp"
+			        android:text="@string/note"
+			        android:textColor="@drawable/gray"
+			        android:textSize="11sp"/>
+			</LinearLayout>
+			
+			<ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:clickable="true"
+		        android:scaleType="matrix"
+		        android:src="@drawable/common_icon_arrowright" />
+		</RelativeLayout>
+		
+		<LinearLayout 
+		    android:id="@+id/ll_homepage_notedetile"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+			<ImageView 
+			    android:id="@+id/iv_homepage_bg"
+				android:layout_width="fill_parent"
+				android:layout_height="160dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:background="@drawable/common_default_bg"/>
+			
+			<RelativeLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    
+			    <TextView 
+			        android:id="@+id/tv_homepage_title"
+			        android:layout_width="270dp"
+			        android:layout_height="wrap_content"
+			        android:singleLine="false"
+			        android:textColor="@drawable/black"
+			        android:textSize="15sp"
+			        android:layout_centerVertical="true"
+			        android:padding="5dp"/>
+			    
+			    <ImageView 
+			        android:id="@+id/iv_homepage_tx"
+			        android:layout_width="65dp"
+			        android:layout_height="65dp"
+			        android:src="@drawable/common_default_tx_wawa_small"
+			        android:background="@drawable/shape_touxiang_small_imageview"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:padding="5dp"
+			        android:layout_marginTop="3dp"/>
+			    
+			</RelativeLayout>
+			<RelativeLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="5dp">
+			    
+			    <RadioButton 
+		            android:id="@+id/rb_homepage_llnum"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:drawableLeft="@drawable/common_eye"
+		            android:textColor="@drawable/gray"
+		            android:textSize="13sp"
+		            android:button="@null"
+		            android:layout_centerVertical="true"
+		            android:padding="3dp"
+		            android:gravity="center"/>
+			    
+			    <RadioButton 
+		            android:id="@+id/rb_homepage_plnum"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:drawableLeft="@drawable/common_comment"
+		            android:textColor="@drawable/gray"
+		            android:textSize="13sp"
+		            android:button="@null"
+		            android:gravity="center"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@id/rb_homepage_llnum"
+		            android:padding="3dp"
+		            android:layout_marginLeft="4dp"/>
+			    
+			</RelativeLayout>
+		</LinearLayout>
+	
+	
+	</LinearLayout>
+	
+	<TextView 
+	    android:background="@drawable/qgray"
+	    android:layout_height="10dp"
+	    android:layout_width="fill_parent"/>
+	
+	<ListView 
+	    android:id="@+id/iv_homepage_theme"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"/>
+	
+</LinearLayout>

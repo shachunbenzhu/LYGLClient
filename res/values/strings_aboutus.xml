@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="aboutxcgl">关于携程攻略</string>
+    <string name="bb">当前版本：</string>
+    <string name="dqbb">V2.5.2</string>
+    <string name="desc">携程攻略旨在打造一个口袋里的旅行世界。在这里你可以找到说走就走的灵感和冲动，我们为你
+        准备好了千万旅行者的真实体验，百万旅行地点信息，海量的靠谱攻略，精挑细选每一条特价产品。当你决定背上行囊，
+        旅行最困难的事已经过去。</string>
+	<string name="kh">携程攻略，遇见不一样的世界。</string>
+	<string name="contactus">联系我们</string>
+	<string name="yx">邮箱：</string>
+	<string name="jtyx">15732632715@163.com</string>
+	<string name="qq">QQ：2083152899</string>
+	<string name="bq">Copyright 2017-2027 By Meteor.All rights reserved.</string>
+    
+
+
+</resources>

@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login">
+	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center" >
+	        
+	    <com.cn.ncist.rq.module.ChildTextView
+	        android:id="@+id/tv_login_username"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/username" />
+	    
+	    <com.cn.ncist.rq.module.ChildEditText 
+	        android:id="@+id/et_login_username"
+	        android:layout_width="130dp" 
+	        android:layout_height="wrap_content" 
+	        android:hint="@string/username_hint"
+	        android:background="@drawable/shape_login_edittext"
+	        android:singleLine="true"
+	        android:layout_toRightOf="@id/tv_login_username"
+	        android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center" >
+	        
+	    <com.cn.ncist.rq.module.ChildTextView
+	        android:id="@+id/tv_login_pwd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/password"
+	        android:layout_marginTop="14dp" />
+	    
+	    <EditText 
+	        android:id="@+id/et_login_pwd"
+	        android:layout_width="130dp"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/password_hint"
+	        android:inputType="textPassword"
+	        android:layout_marginLeft="18dp"
+	        android:background="@drawable/shape_login_edittext"
+	        android:singleLine="true"
+	        android:layout_toRightOf="@id/tv_login_pwd"
+	        android:layout_marginTop="14dp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout  
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center" > 
+	     
+	    <com.cn.ncist.rq.module.ChildCheckBox
+			android:id="@+id/cb_login_showpwd" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:checked="false"
+			android:text="@string/showpassword"
+			android:layout_marginTop="10dp" />
+	    
+	    <com.cn.ncist.rq.module.ChildCheckBox
+			android:id="@+id/cb_login_rempwd" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:checked="false"
+			android:text="@string/rempwd"
+			android:layout_toRightOf="@id/cb_login_showpwd"
+			android:layout_alignBottom="@id/cb_login_showpwd"
+			android:layout_marginLeft="10dp" />
+	    
+    </RelativeLayout>	
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center" >
+       
+        <com.cn.ncist.rq.module.ChildButton 
+            android:id="@+id/bt_login_log"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/login"
+			android:layout_marginTop="5dp"
+			android:background="#00000000" />	
+        
+        <com.cn.ncist.rq.module.ChildButton 
+            android:id="@+id/bt_login_register"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/register"
+			android:layout_marginLeft="20dp"
+			android:layout_marginTop="5dp"
+			android:background="#00000000" />
+        
+        <com.cn.ncist.rq.module.ChildButton 
+            android:id="@+id/bt_login_reset"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/reset"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="20dp"
+			android:background="#00000000" />
+    </LinearLayout>  
+    
+    <com.cn.ncist.rq.module.ChildButton 
+            android:id="@+id/bt_main"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/main"
+			android:layout_margin="5dp"
+			android:background="#00000000"
+			android:gravity="center"
+			android:layout_gravity="center" />
+</LinearLayout>
+

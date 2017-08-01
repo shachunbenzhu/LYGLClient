@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_destination_rl"
+    android:orientation="vertical"
+    android:background="@drawable/selector_gridview_destination">
+    
+    <RelativeLayout
+		android:id="@+id/rl_destination_item"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_gravity="center"
+		android:layout_margin="20dp">
+	    <TextView 
+	        android:id="@+id/tv_destination_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textColor="@drawable/black"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="10dp"/>
+	</RelativeLayout>
+	
+    <TextView 
+		android:id="@+id/tv_destination_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/black"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:layout_marginTop="5dp"/>
+    
+    <TextView 
+		android:id="@+id/tv_destination_pinyin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/gray1"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:layout_marginTop="5dp"/>
+</LinearLayout>

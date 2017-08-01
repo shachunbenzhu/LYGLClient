@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/bg_login" >
+      
+    <com.cn.ncist.rq.module.ChildTextView
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="5" />
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_weight="1" >
+	        
+	    <com.cn.ncist.rq.module.ChildTextView
+	        android:id="@+id/tv_register_username"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/username" />
+	    
+	    <com.cn.ncist.rq.module.ChildEditText 
+	        android:id="@+id/et_register_username"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="15dp"
+	        android:layout_toRightOf="@id/tv_register_username"
+	        android:background="@drawable/shape_login_edittext"
+	        android:hint="@string/username_hint"
+	        android:singleLine="true" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_weight="1" >
+	        
+	    <com.cn.ncist.rq.module.ChildTextView
+	        android:id="@+id/tv_register_pwd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/password"
+	        android:layout_marginTop="13dp" />
+	    
+	    <EditText 
+	        android:id="@+id/et_register_pwd"
+	        android:layout_width="120dp"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/password_hint"
+	        android:inputType="textPassword"
+	        android:layout_marginLeft="25dp"
+	        android:layout_alignBottom="@id/tv_register_pwd"
+	        android:background="@drawable/shape_login_edittext"
+	        android:singleLine="true"
+	        android:layout_toRightOf="@id/tv_register_pwd" />
+
+    </RelativeLayout>
+    
+    <!-- <RelativeLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_weight="1"
+	    android:layout_gravity="center_horizontal" >
+	        
+	    <com.cn.ncist.rq.module.ChildTextView
+	        android:id="@+id/touxiang_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/touxiang"
+	        android:layout_marginTop="13dp" />
+	    
+	    <Spinner 
+	        android:id="@+id/touxiang_spinner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:prompt="@string/touxiang_prompt"
+	        android:entries="@array/touxiang_labels"
+	        android:layout_toRightOf="@id/touxiang_tv"
+			android:layout_marginLeft="17dp"
+	        android:layout_alignBottom="@id/touxiang_tv" />
+	    
+    </RelativeLayout> -->
+    
+    
+    <!-- <include 
+        layout="@layout/touxiang_gridview"
+        android:layout_weight="1"/> 
+    
+    <FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1" >
+	    
+		<GridView
+		        android:id="@+id/touxiang_gridview"
+		        android:layout_width="wrap_content"
+		        android:layout_height="100dp"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginLeft="50dp"
+		        android:layout_marginRight="50dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_weight="3"
+		        android:background="@drawable/shape_login_edittext"
+		        android:numColumns="3" />
+	</FrameLayout> -->
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_weight="1" >
+        
+        <com.cn.ncist.rq.module.ChildButton 
+            android:id="@+id/bt_register_reg"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/register"
+			android:layout_marginLeft="15dp"
+			android:background="#00000000" />
+        
+        <com.cn.ncist.rq.module.ChildButton 
+            android:id="@+id/bt_register_reset"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/reset"
+			android:layout_marginLeft="20dp"
+			android:background="#00000000" 
+			android:layout_toRightOf="@id/bt_register_reg"/>
+    </RelativeLayout>
+    
+    <com.cn.ncist.rq.module.ChildTextView
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="5" />
+        
+</LinearLayout>

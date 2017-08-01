@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_qgraywhite"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/white">
+        <Button 
+            android:id="@+id/bt_writenote_qx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparent"
+            android:text="@string/qx"
+            android:textSize="15sp"/>
+        
+        <com.cn.ncist.rq.module.TitleTextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/xyj"
+            android:textSize="25sp"
+            android:padding="3dp"/>
+        
+        <Button 
+            android:id="@+id/bt_writenote_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparent"
+            android:text="@string/fb"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        
+        <TextView 
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/bt"
+            android:textSize="20sp"
+            android:padding="3dp"/>
+        
+        <EditText 
+            android:id="@+id/et_writenote_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/tv"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparent"
+            android:hint="@string/srbt"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"/>
+        
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/et_writenote_content"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:gravity="left|top"
+        android:hint="@string/sdsm"       
+        android:background="@null" >
+    </EditText>
+
+    <GridView 
+        android:id="@+id/gv_writenote_noScrollgridview"
+        android:layout_width="290dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="5dp"
+        android:horizontalSpacing="3dp"        
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </GridView>
+    
+    <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/gray1"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_writenote_des"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp">
+        
+        <TextView 
+            android:id="@+id/tv_writenote_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/mdd"
+            android:textSize="20sp"
+            android:padding="3dp"/>
+        
+        <ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:clickable="true"
+			android:scaleType="matrix"
+			android:src="@drawable/common_icon_arrowright"
+			android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/bg_qgraywhite"
+    tools:context=".AboutUsActivity"
+    android:orientation="vertical" >
+    
+   	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/white">
+        <Button 
+            android:id="@+id/bt_questiondetile_back"
+            android:layout_width="23dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_icon_back"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"/>
+        
+        <com.cn.ncist.rq.module.TitleTextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/wtbz"
+            android:textSize="25sp"
+            android:padding="3dp"/>
+    </RelativeLayout>
+    
+   	<LinearLayout 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:gravity="center_horizontal"
+   	    android:padding="13dp"
+   	    android:background="@drawable/white"
+   	    android:orientation="vertical"
+   	    android:layout_margin="3dp">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+	   	    <ImageView 
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:src="@drawable/common_default_ques"
+	   	        android:layout_gravity="center_vertical"/>
+	   	    
+	   	    <TextView 
+	   	        android:id="@+id/tv_questiondetile_content"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:textStyle="bold"
+	   	        android:textSize="17sp"
+	   	        android:layout_gravity="center_vertical"
+	   	        android:layout_margin="10dp"/>
+   	    </LinearLayout>
+   	    
+   	    <TextView 
+	   	        android:id="@+id/tv_questiondetile_answer"
+	   	        android:layout_width="fill_parent"
+	   	        android:layout_height="wrap_content"
+	   	        android:textSize="14sp"
+	   	        android:layout_marginLeft="30dp"
+	   	        android:singleLine="false"
+	   	        android:padding="10dp"
+	   	        android:layout_marginRight="10dp"/>
+   	    
+   	    <TextView 
+   	        android:layout_margin="10dp"
+			android:layout_width="fill_parent"
+			android:layout_height="1dp"
+			android:background="@drawable/qgray"/>
+   	    
+   	    <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+	   	    <RadioButton 
+	   	        android:id="@+id/rb_questiondetile_yy"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:drawableLeft="@drawable/common_zan1"
+	   	        android:button="@null"
+	   	        android:text="@string/youy"
+	   	        android:textColor="@drawable/gray1"
+	   	        android:textSize="12sp"
+	   	        android:layout_centerVertical="true"
+	   	        android:layout_marginLeft="40dp"/>
+	   	    
+	   	    <TextView 
+	   	        android:layout_margin="10dp"
+				android:layout_width="1dp"
+				android:layout_height="wrap_content"
+				android:background="@drawable/qgray"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"/>
+	   	    
+	   	    <RadioButton 
+	   	        android:id="@+id/rb_questiondetile_wy"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:drawableLeft="@drawable/common_nozan"
+	   	        android:button="@null"
+	   	        android:text="@string/wuy"
+	   	        android:textColor="@drawable/gray1"
+	   	        android:textSize="12sp"
+	   	        android:layout_centerVertical="true"
+	   	        android:layout_alignParentRight="true"
+	   	        android:layout_marginRight="40dp"/>
+   	    </RelativeLayout>
+   	    
+   	</LinearLayout>
+	
+   	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/xgwt"
+		android:textSize="15sp"
+		android:padding="15dp"/>
+   	
+   	<LinearLayout 
+   	    android:id="@+id/lv_questiondetile_list"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="fill_parent"
+   	    android:background="@drawable/white"
+   	    android:layout_margin="3dp">
+   	    <ListView 
+	   	    android:id="@+id/lv_questiondetile_lv"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="fill_parent"/>
+   	</LinearLayout>
+   	
+</LinearLayout>

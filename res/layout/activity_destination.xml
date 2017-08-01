@@ -1,0 +1,69 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#ffffff"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginTop="5dp">
+
+        <com.cn.ncist.rq.module.TitleTextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/word"
+            android:textColor="@drawable/black"
+            android:textSize="25sp"
+            android:padding="3dp"/>
+        
+        <Button 
+            android:id="@+id/bt_destination_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/note_search1"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        
+        <!--<GridView 
+            android:id="@+id/gv_destination_nation"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:numColumns="1"
+            android:layout_weight="2.5"/>  -->
+            
+        <ExpandableListView 
+            android:id="@+id/elv_destination_nati"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_qgraywhite"
+            android:cacheColorHint="#00000000"
+            android:layout_weight="2"/>
+        
+        <LinearLayout 
+	        android:id="@+id/ll_destination_ll"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1">
+        <GridView 
+            android:id="@+id/gv_destination_des"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:numColumns="2"/>
+        </LinearLayout>
+    </LinearLayout>
+	
+
+</LinearLayout>

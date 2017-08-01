@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="glan">概览</string>
+    
+    <string name="kslj">快速了解</string>
+    <string name="srlx">深入当地的旅行</string>
+    <string name="rmlx">热门路线</string>
+    <string name="lygg">旅游公告</string>
+    <string name="cypzgl">穿衣/拍照攻略</string>
+    
+    <string name="rhdd">如何到达</string>
+    <string name="qlj">怎么去？</string>
+    
+    <string name="ddjt">当地交通</string>
+    <string name="ddjtzn">当地交通指南</string>
+    
+    <string name="gcjjj">古城及近郊</string>
+    <string name="zb">周边</string>
+    <string name="fkzn">防坑指南</string>
+    
+    <string name="tsms">特色美食</string>
+    <string name="rmcttj">热门餐厅推荐</string>
+    <string name="mszn">美食指南</string>
+    
+    <string name="zszn">住宿指南</string>
+    
+    <string name="zdm">什么值得买</string>
+    <string name="tsdptj">特点店铺推荐</string>
+    <string name="fkxts">防坑小贴士</string>
+    
+    <string name="qt">其他</string>
+    <string name="zx">向作者致谢</string>
+    
+    <string name="download">下载到本地</string>
+
+
+</resources>
